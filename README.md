@@ -114,7 +114,7 @@ HOSTINGER_SSH_PORT=22
 Add these repository variables if you want to override the defaults:
 
 ```text
-DEPLOY_PATH=apps/portfolio
+DEPLOY_PATH=/home/deploy/portfolio
 APP_PORT=3000
 HOST_BIND=127.0.0.1
 ```
@@ -135,7 +135,7 @@ The production Compose file copied to the VPS is `deploy/docker-compose.prod.yml
 On the VPS, useful commands are:
 
 ```bash
-cd apps/portfolio
+cd /home/deploy/portfolio
 docker compose ps
 docker compose logs -f web
 docker compose pull
